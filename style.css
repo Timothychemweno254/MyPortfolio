@@ -13,6 +13,7 @@
     --gradient-2: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
     --gradient-3: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
+
 /* Logo Styles */
 .logo-container {
     display: flex;
@@ -971,6 +972,28 @@ footer {
     transform: translateY(0);
 }
 
+/* Typing Animation Styles */
+.typing-container {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.typing-text {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #3b82f6 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-right: 3px solid #a855f7;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink-caret .75s step-end infinite;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .hero-content {
@@ -1035,6 +1058,18 @@ footer {
     section {
         padding: 4rem 1rem;
     }
+
+    /* Typing text adjustments */
+    .typing-text {
+        font-size: 2.5rem;
+        white-space: normal;
+        border-right: none;
+        animation: none;
+    }
+
+    .typing-container {
+        min-height: 90px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1064,6 +1099,24 @@ footer {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
         height: 200px;
+    }
+
+    /* Typing text adjustments for small screens */
+    .typing-text {
+        font-size: 1.8rem;
+        white-space: normal;
+        border-right: none;
+        animation: none;
+    }
+
+    .typing-container {
+        min-height: 70px;
+    }
+
+    /* Ensure typing animation doesn't show cursor on mobile */
+    .typewriter {
+        border-right: none;
+        animation: none;
     }
 }
 
@@ -1157,31 +1210,8 @@ footer {
   100% { transform: scale(1.02); }
 }
 
-/* Typing animation styles */
-.typing-text {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-    min-height: 120px;
-    display: inline-block;
-    background: linear-gradient(135deg, #3b82f6 0%, #7c3aed 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    border-right: 3px solid #a855f7;
-    white-space: nowrap;
-    overflow: hidden;
-}
-
 /* Cursor blink animation */
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #a855f7; }
 }
-
-.typing-text {
-    animation: blink-caret .75s step-end infinite;
-}
-
-/* Rest of your existing CSS remains exactly the same */
-/* Keep all your other CSS styles as they were */
