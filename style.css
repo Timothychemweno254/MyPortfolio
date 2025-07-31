@@ -283,6 +283,114 @@ nav a:hover::after {
     gap: 1rem;
     margin-top: 2rem;
 }
+/* Typing Animation Styles - Updated */
+.typing-container {
+    min-height: 80px; /* Reduced height for mobile */
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem; /* Added space below */
+}
+
+.typing-text {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #3b82f6 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border-right: 3px solid #a855f7;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    animation: blink-caret .75s step-end infinite;
+    line-height: 1.2; /* Better line height */
+}
+
+/* Responsive Design - Updated Mobile Styles */
+@media (max-width: 768px) {
+    /* Reduced header sizes */
+    .hero-text h1 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-text .subtitle {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Adjusted typewriter for mobile */
+    .typing-text {
+        font-size: 2rem;
+        white-space: normal;
+        border-right: none;
+        animation: none;
+        margin-top: -1rem; /* Pull up slightly */
+        margin-bottom: 0.5rem;
+    }
+
+    .typing-container {
+        min-height: 60px;
+        margin-top: -0.5rem; /* Pull up the container */
+    }
+
+    /* Smaller buttons and links */
+    .cta-button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    /* More compact hero section */
+    .hero-content {
+        padding-top: 2rem;
+    }
+
+    /* Adjust image circle position */
+    .hero-images {
+        margin-top: -1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Even smaller text for very small screens */
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .typing-text {
+        font-size: 1.7rem;
+        margin-top: -1.5rem;
+    }
+
+    .typing-container {
+        min-height: 50px;
+    }
+
+    /* More compact navigation */
+    nav ul {
+        gap: 0.75rem;
+    }
+
+    /* Adjust hero section spacing */
+    #hero {
+        padding-top: 3rem;
+    }
+
+    /* Smaller buttons */
+    .hero-buttons {
+        margin-top: 1rem;
+    }
+}
 
 .cta-button {
     display: inline-block;
