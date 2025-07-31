@@ -1,41 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grace Kahare - Software Engineer</title>
+    <title>Timothy Kiprop- Software Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-theme">
     <header>
         <nav>
-            <div class="logo">KAHARE</div>
+            <div class="logo">Chemweno</div>
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </div>
         </nav>
     </header>
 
     <section id="hero">
+        <div class="ai-particles"></div>
         <div class="hero-content">
-            <h2>Hi i'm Grace Kahare</h2>
-            <p class="subtitle">Software Engineer / Full-stack Developer</p>
-            <a href="#about" class="cta-button">Discover My Journey</a>
+            <div class="hero-text">
+                <h1 class="typing-text"></h1>
+                <p class="subtitle">Creating digital experiences that matter</p>
+                <div class="hero-buttons">
+                    <a href="#about" class="cta-button">Discover My Journey</a>
+                    <!-- Update your download button in the hero section -->
+<a href="https://drive.google.com/uc?export=download&id=1UGN8itQZ1A-bTrRud6KmbH_qowgtEUBo" 
+   download="Timothy_kiprop_CV.pdf" 
+   class="cta-button secondary">
+   Download CV <i class="fas fa-download"></i>
+</a>
+                </div>
+            </div>
+            <div class="hero-images">
+                <div class="image-circle">
+                    <img src="https://i.postimg.cc/br79v5rV/logo3.png" alt="Timothy" class="main-image">
+                    <div class="ai-bubble bubble-1">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="ai-bubble bubble-2">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="ai-bubble bubble-3">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="about" class="fade-in">
         <h2>About Me</h2>
-        <p>I'm a passionate software engineer at Moringa School, where I blend my love for coding with a deep commitment to transforming lives through technology education.<br> My journey into software development began with a fascination for problem-solving and the endless possibilities that code can unlock, which naturally led me to join Moringa's mission of bridging Africa's digital skills gap.<br> What drives me most is witnessing the moment when students grasp complex programming concepts and realize they can build solutions that impact their communities.<br> I'm particularly energized by working on educational platforms that make quality tech education accessible, and I find immense satisfaction in mentoring aspiring developers who are eager to break into the industry.<br> Beyond the technical aspects of my role, I'm motivated by the vision of contributing to Africa's tech renaissance, where homegrown talent creates innovative solutions for both local and global challenges</p>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate software engineer at Moringa School, where I blend my love for coding with a deep commitment to transforming lives through technology education.</p>
+                <p>My journey into software development began with a fascination for problem-solving and the endless possibilities that code can unlock, which naturally led me to join Moringa's mission of bridging Africa's digital skills gap.</p>
+                <p>What drives me most is witnessing the moment when students grasp complex programming concepts and realize they can build solutions that impact their communities.</p>
+                <div class="tech-stack">
+                    <h3>My Tech Stack</h3>
+                    <div class="stack-icons">
+                        <i class="fab fa-html5" title="HTML5"></i>
+                        <i class="fab fa-css3-alt" title="CSS3"></i>
+                        <i class="fab fa-js" title="JavaScript"></i>
+                        <i class="fab fa-react" title="React"></i>
+                        <i class="fab fa-node-js" title="Node.js"></i>
+                        <i class="fab fa-python" title="Python"></i>
+                        <i class="fas fa-database" title="SQL"></i>
+                        <i class="fab fa-git-alt" title="Git"></i>
+                        <i class="fab fa-figma" title="Figma"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="about-images">
+                <img src="https://i.postimg.cc/W41WCQk0/logo2.png" alt="Grace working" class="about-img-1">
+                <img src="https://i.postimg.cc/c4GD0K3x/logo4.png" alt="Grace teaching" class="about-img-2">
+                <img src="https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Grace coding" class="about-img-3">
+            </div>
+        </div>
     </section>
 
     <section id="skills" class="fade-in">
-        <h2>My Technical Arsenal</h2>
+        <h2>My Tech Stack</h2>
         <div class="skills-grid">
             <div class="skill-card">
                 <i class="fab fa-html5 skill-icon"></i>
@@ -90,120 +145,177 @@
                 <h3>SQL</h3>
                 <p>Designing and querying relational databases with SQL. I optimize database performance and ensure data integrity in complex application architectures.</p>
             </div>
+
+            <div class="skill-card">
+                <i class="fab fa-figma skill-icon"></i>
+                <h3>Figma</h3>
+                <p>Designing intuitive user interfaces and prototypes with Figma. I bridge the gap between design and development with pixel-perfect implementations.</p>
+            </div>
         </div>
     </section>
 
+    <section id="projects" class="fade-in">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+        <!-- Existing Project 1 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://i.postimg.cc/dVPmGg6J/goldentone.png" alt="Goldentone Constructors">
+                <div class="project-languages">
+                    <span class="language-tag">React</span>
+                    <span class="language-tag">Node.js</span>
+                    <span class="language-tag">Flask</span>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Goldentone Constructors Web</h3>
+                <p>An interactive Construction website for marketing goldentone construction company</p>
+                <a href="https://goldentoneconstructors.com/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Existing Project 2 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://i.postimg.cc/QMjQy5vP/moringa.png" alt="MoringaDesk App">
+                <div class="project-languages">
+                    <span class="language-tag">React</span>
+                    <span class="language-tag">Flask</span>
+                    <span class="language-tag">SQLite</span>
+                    <span class="language-tag">Python</span>
+                    <span class="language-tag">Tailwind CSS</span>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>MoringaDesk App</h3>
+                <p>A Web application for tracking moringaschool students problems and solving issues</p>
+                <a href="https://funny-sprite-8e31be.netlify.app/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Existing Project 3 -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://i.postimg.cc/LXbj5WhK/sunny.png" alt="Sunnyville Ecommerce">
+                <div class="project-languages">
+                    <span class="language-tag">Python</span>
+                    <span class="language-tag">Flask</span>
+                    <span class="language-tag">OpenAI API</span>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Sunnyville Ecommerce</h3>
+                <p>A web application for marketing new season jerseys and football kits</p>
+                <a href="https://sunnycollection-2.onrender.com/" target="_blank" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- New Project 4 - AI Content Generator -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://i.postimg.cc/Kzvdx13p/shoe.png" alt="AI Content Generator">
+                <div class="project-languages">
+                    <span class="language-tag">Python</span>
+                    <span class="language-tag">Flask</span>
+                    <span class="language-tag">OpenAI API</span>
+                    <span class="language-tag">JavaScript</span>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Shoe E-Commerce </h3>
+                <p>Web application that advertises and markets shoes in best kenyan markets and tracks user orders and stock managements</p>
+                <a href="https://neon-cupcake-54102a.netlify.app/" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- New Project 5 - Task Management System -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1080&q=80" alt="Task Management System">
+                <div class="project-languages">
+                    <span class="language-tag">React</span>
+                    <span class="language-tag">Node.js</span>
+                    <span class="language-tag">MongoDB</span>
+                    <span class="language-tag">GraphQL</span>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>TaskFlow Management</h3>
+                <p>Collaborative task management system with real-time updates and progress tracking</p>
+                <a href="#" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- New Project 6 - Health Tracker App -->
+        <div class="project-card">
+            <div class="project-image">
+                <img src="https://i.postimg.cc/br4MxLC4/urbun1.png" alt="Health Tracker App">
+                <div class="project-languages">
+                    <span class="language-tag">React </span>
+                    <span class="language-tag">Firebase</span>
+                    <span class="language-tag">Context</span>
+                    <span class="language-tag">Weather API</span>
+                    <span class="language-tag">Flask</span>
+                    <span class="language-tag">Tailwind CSS</span>
+                </div>
+            </div>
+            <div class="project-info">
+                <h3>Urbanhire Hiring App</h3>
+                <p>Hirerinnng platform for car hire and tracking in specified pereods of time</p>
+                <a href="https://friendly-starship-1fea59.netlify.app/" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
     <section id="education" class="fade-in">
+        <h2>Education & Experience</h2>
         <div class="education-timeline">
             <div class="education-item">
-                <div class="education-date">2024 - 2025</div>
+                <div class="education-date">2025 - 2025</div>
                 <h3>Software Engineering Bootcamp</h3>
                 <h4>Moringa School, Nairobi</h4>
-                <p>Intensive full-stack development program focusing on modern web technologies, software engineering principles, and industry best practices. The curriculum covers everything from frontend frameworks to backend development, database management, and deployment strategies. Through hands-on projects and collaborative learning, I'm building real-world applications while developing problem-solving skills essential for today's tech landscape.</p>
-                <p><strong>Expected Graduation:</strong> November 2025</p>
+                <p>Intensive full-stack development program focusing on modern web technologies, software engineering principles, and industry best practices.</p>
                 <p><strong>Key Focus Areas:</strong> Full-stack development, Agile methodologies, Version control, Database design, API development, and Software testing</p>
             </div>
-        </div>
-    </section>
 
-    <section id="contact" class="fade-in">
-        <h2>Let's Connect</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>Get In Touch</h3>
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <strong>Email</strong><br>
-                        nduta6466@gmail.com
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <strong>Phone</strong><br>
-                        +254 716 001 793
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fab fa-instagram"></i>
-                    <div>
-                        <strong>Instagram</strong><br>
-                        <a href="https://instagram.com/kahar_.e" target="_blank" style="color: var(--accent-color);">@kahar_.e</a>
-                    </div>
-                </div>
-            </div>
             
-            <form>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="_replyto" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <button type="submit">Send Message</button>
-            </form>
+
+            
         </div>
     </section>
+<!-- Add this to your HTML -->
+<section id="contact-cli" class="fade-in">
+    <h2>Lets Connect</h2>
+    <div class="cli-container">
+        <div class="cli-header">
+            <span class="cli-prompt">@ guests send me Direct message:~$</span>
+            <span class="cli-command">contact --start</span>
+        </div>
+        <div class="cli-body" id="cli-output">
+            <div class="cli-response">Initializing contact protocol...</div>
+            <div class="cli-response">Type your information when prompted</div>
+            <div class="cli-response">Available commands: <span class="cli-cmd">clear</span>, <span class="cli-cmd">reset</span></div>
+        </div>
+        <div class="cli-input">
+            <span class="cli-prompt">Type her:</span>
+            <input type="text" id="cli-field" class="cli-field" autofocus>
+        </div>
+    </div>
+</section>
 
     <footer>
-        <p>&copy; 2024 Grace Kahare. Happy Coding!</p>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://github.com/Timothychemweno254" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/timothy-chemweno" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://x.com/TimothyChe61252?t=zpCgdr4hBQEMct0Gld2Ytw&s=09" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/chemweno34?igsh=dzRicWtuMndwbTRj" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>&copy; 2024 Timothy Kiprop. All rights reserved.</p>
+            <p class="footer-quote">"Code is poetry, and every line tells a story."</p>
+        </div>
     </footer>
 
-    <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            });
-        });
-
-        // Scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Header background on scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(15, 15, 35, 0.95)';
-            } else {
-                header.style.background = 'rgba(15, 15, 35, 0.9)';
-            }
-        });
-
-        // Form submission 
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            this.reset();
-        });
-    </script>
-    
+    <script src="script.js"></script>
 </body>
 </html>
